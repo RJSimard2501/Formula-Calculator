@@ -164,9 +164,11 @@ def randomNumberGenerator():
         fMin = floatconverter(input("What is the minimum number you want to start with: "))        
         fMax = floatconverter(input("What is the maximum number you want to end with: "))
         TotalOps = int(floatconverter(input("How many numbers do you want: ")))
+        Dividerf()
+        TotalOps += 1
         
         #Get the numbers
-        fOpCount = 0
+        fOpCount = 1
         while fOpCount < TotalOps:
             fOutput = random.uniform(fMin, fMax)
             print(f"Random number {fOpCount} is: {fOutput:0.1f}\n")
